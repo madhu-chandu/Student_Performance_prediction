@@ -42,7 +42,7 @@ Source: Kaggle - Student Performance in Exams
 
 1. Clone the repository
 
-git clone https://github.com/yourusername/student-performance-predictor.git
+git clone https://github.com/madhu-chandu/student-performance-predictor.git
 
 2. Install the required packages
 
