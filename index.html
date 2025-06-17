@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Math Score Predictor</title>
+</head>
+<body>
+    <h1>Student Math Score Predictor 🎓</h1>
+    <form method="POST">
+        <label>Gender:</label>
+        <input name="gender" placeholder="male/female" required><br>
+
+       <label for="race_ethnicity">Race/Ethnicity:</label>
+<select name="race_ethnicity" required>
+  <option value="group A">Group A</option>
+  <option value="group B">Group B</option>
+  <option value="group C">Group C</option>
+  <option value="group D">Group D</option>
+  <option value="group E">Group E</option>
+</select><br>
+
+        <label>Parental Education:</label>
+        <input name="parental_level_of_education" placeholder="associate's degree, bachelor's degree, etc." required><br>
+
+        <label>Lunch:</label>
+        <input name="lunch" placeholder="standard/free/reduced" required><br>
+
+        <label>Test Prep Course:</label>
+        <input name="test_preparation_course" placeholder="completed/none" required><br>
+
+        <label>Reading Score:</label>
+        <input type="number" name="reading_score" required><br>
+
+        <label>Writing Score:</label>
+        <input type="number" name="writing_score" required><br>
+
+        <button type="submit">Predict</button>
+    </form>
+
+    {% if prediction %}
+        <h2>Predicted Math Score: {{ prediction | round(2) }}</h2>
+    {% endif %}
+</body>
+</html>
